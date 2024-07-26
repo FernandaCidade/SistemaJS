@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        saldo = parseInt(prompt("Informar saldo inicial"));
+
+        document.write("Saldo inicial: "+saldo+"<br>"); //Serve para escrever alguma coisa diretamente da pagina enquanto ela está sendo carregada
+
+        encerrar = "n";
+
+        while(encerrar == "n"){
+
+            tipo = parseInt(prompt("Informar tipo de entrada (1 ou 2)"));
+            quantidade = parseInt(prompt("Informar quantidade"));
+
+            if(tipo == 1){
+
+                saldo = saldo + quantidade;
+                document.write("Entrada: "+quantidade+"<br>")
+
+            }
+
+            if(tipo == 2){
+
+                if(saldo >= quantidade){
+
+                    saldo = saldo - quantidade;
+                    document.write("Saída: "+ quantidade + "<br>");
+
+                }else{
+
+                    document.write("Saldo insuficiente "+"<br>");
+                    alert("Saldo insuficiente");
+
+                }
+
+            }
+
+            document.write("Saldo: "+saldo+"<br>");
+            encerrar = prompt("Deseja encerrar? (s/n)");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
