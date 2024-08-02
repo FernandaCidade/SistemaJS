@@ -1,0 +1,10 @@
+var velocidade = 30
+
+console.log(`A velocidade do seu carro é ${velocidade}Km/h`)
+
+if(velocidade > 60){//condição simples
+    console.log("Você ultrapassassou a velocidade permitida. MULTADO!")
+}
+
+console.log("Dirija sempre usando cinto de segurança")
+
