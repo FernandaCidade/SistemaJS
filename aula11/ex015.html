@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação de Nacionalidade</title>
+</head>
+<body>
+    <h1>Você é Brasileiro?</h1>
+    
+    Digite o seu país de origem: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar" onClick="descobrir()">
+
+    <div id="resultado">
+
+    </div>
+    <Script>
+        function descobrir(){
+        var txtpais = window.document.querySelector('#txtpais').value //pegar o valor no input
+        var resultado = window.document.querySelector('#resultado')
+
+       
+        
+        if(txtpais == "Brasil"){
+            resultado.innerHTML = `<p> hahahah ${txtpais}</p>`
+           
+        }else{
+            resultado.innerHTML = `<p> Tu é ${txtpais} kkk</p>`
+            
+        }
+    }
+
+    </Script>
+
+</body>
+</html>
